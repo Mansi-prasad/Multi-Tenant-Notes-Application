@@ -8,7 +8,7 @@ export async function invite(req, res) {
     const { slug } = req.params;
     const { email, role = "Member", password = "password" } = req.body || {};
 
-    // ensure admin operates only inside their tenant
+    // Only allows admin to operate inside their own tenant
     if (req.user.tenantSlug !== slug) {
       return res
         .status(403)
@@ -48,6 +48,7 @@ export async function upgrade(req, res) {
   try {
     const { slug } = req.params;
 
+    // Only allows admin to upgrade their own tenant
     if (req.user.tenantSlug !== slug) {
       return res
         .status(403)
