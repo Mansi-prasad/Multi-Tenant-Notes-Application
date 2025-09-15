@@ -112,27 +112,51 @@ npm run dev
 ---
 
 ## 🌐 Deployment
--- Both frontend and backend are deployed on Vercel.
--- Ensure proper CORS configuration for API accessibility.
--- MongoDB Atlas used as database.
+ - Both frontend and backend are deployed on Vercel.
+ - Ensure proper CORS configuration for API accessibility.
+ - MongoDB Atlas used as database.
 
 ---
 
 ## API Endpoints
 
 ### Authentication
- -- `POST /auth/login` - Login and receive JWT.
+ - `POST /auth/login` - Login and receive JWT.
 
 ### Tenants
- -- `POST /tenants/:slug/upgrade` - Upgrade tenant plan (Admin only).
+ - `POST /tenants/:slug/upgrade` - Upgrade tenant plan (Admin only).
 
 ### Notes
- -- `POST /notes` - Create a note.
- -- `GET /notes` - List all notes.
- -- `GET /notes/:id` - Get a note.
- -- `PUT /notes/:id` - Update a note.
- -- `DELETE /notes/:id` - Delete a note.
+ - `POST /notes` - Create a note.
+ - `GET /notes` - List all notes.
+ - `GET /notes/:id` - Get a note.
+ - `PUT /notes/:id` - Update a note.
+ - `DELETE /notes/:id` - Delete a note.
 
 ### Health Check
- -- `GET /health` - `{ "status": "ok" }`
+ - `GET /health` - `{ "status": "ok" }`
 
+---
+
+## 📸 Screenshots
+
+**Login page:** 
+
+![Login Screenshot](screenshots/login.png)
+
+**Dashboard:**
+
+![Dashboard Screenshot](screenshots/dashboard.png)
+
+**Notes page:**
+
+![Notes page Screenshot](screenshots/notes.png)
+
+**Admin page:**
+
+![Admin page Screenshot](screenshots/admin.png)
+
+---
+
+## Live Link  
+https://notes-application-frontend-three.vercel.app/
