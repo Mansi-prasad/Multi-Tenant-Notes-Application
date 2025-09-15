@@ -4,8 +4,8 @@ import { AuthContext } from "../context/AuthContext";
 
 export default function Login() {
   const { login } = React.useContext(AuthContext);
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("admin@acme.test");
+  const [password, setPassword] = useState("password");
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
