@@ -36,7 +36,7 @@ The app supports multiple tenants (companies), role-based access control, subscr
   - Health check endpoint:  
     ```
     GET /health
-    - { "status": "ok" }
+    { "status": "ok" }
     ```
 
 - **Frontend**
@@ -73,8 +73,8 @@ Use the following accounts (all passwords: `password`):
 
 ### 1️. Clone Repository
 ```bash
-git clone https://github.com/yourusername/saas-notes-app.git
-cd saas-notes-app
+git clone https://github.com/Mansi-prasad/Multi-Tenant-Notes-Application/
+cd Multi-Tenant-Notes-Application
 ```
 ### 2. Backend Setup
 ``` bash
@@ -102,7 +102,7 @@ npm install
 
 Create a `.env` file in `frontend/` with: 
 ``` env
-REACT_APP_API_URL=
+VITE_API_URL=
 ```
 
 Run frontend locally:
